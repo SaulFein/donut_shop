@@ -74,7 +74,6 @@ var wedgewood = new Donutshop('Wedgewood', 2, 28, 1.25);
 var ballard = new Donutshop('Ballard', 8, 58, 3.75);
 
 
-
 downtown.render();
 capitolHill.render();
 southLakeUnion.render();
@@ -82,24 +81,32 @@ wedgewood.render();
 ballard.render();
 
 
-
 var newShopButton = document.getElementById("add-new-shop");
 
 var handelShopSubmit = function(){
 
-var newShopForm = document.getElementById("add-new-form");
-var newLocationName = document.getElementById("location-name").value;
-var newMinCust = parseInt(document.getElementById("min-cust").value);
-var newMaxCust = document.getElementById("max-cust").value;
-var newAvDonuts = document.getElementById("av-donuts").value;
-var newShop = new Donutshop(newLocationName, newMinCust, newMaxCust, newAvDonuts);
-console.log(newShop)
+  var newShopForm = document.getElementById("add-new-form");
+  var newLocationName = document.getElementById("location-name").value;
+  var newMinCust = parseInt(document.getElementById("min-cust").value);
+  var newMaxCust = document.getElementById("max-cust").value;
+  var newAvDonuts = document.getElementById("av-donuts").value;
+  var newShop = new Donutshop(newLocationName, newMinCust, newMaxCust, newAvDonuts);
+  console.log(newShop)
 
   newShop.getDonutsByTheHr();
   newShop.render();
-  console.dir('yo')
 
-}
+  }
+
+var donutShopObjects = [downtown, capitolHill, southLakeUnion, wedgewood, ballard];
+
+//var updateShops = function(){
+  //if(donutShopObjects = newLocationName){
+   // newLocationName ==
+//}
+
+
+
 
 newShopButton.addEventListener("click", handelShopSubmit);
 
