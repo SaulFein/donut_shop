@@ -31,29 +31,24 @@ Donutshop.prototype.hourlyTotal = function() {
 }
 
 Donutshop.prototype.render = function() {
-  downtown.getDonutsByTheHr();
-  capitolHill.getDonutsByTheHr();
-  southLakeUnion.getDonutsByTheHr();
-  wedgewood.getDonutsByTheHr();
-  ballard.getDonutsByTheHr();
-  // append name
+      // append name
       var table = document.getElementById("donut-table");
-      var tr = document.createElement("tr");
-      tr.innerHTML = this.locationName;
-      table.appendChild(tr);
+      var tableRow = document.createElement("tr");
+      tableRow.innerHTML = this.locationName;
+      table.appendChild(tableRow);
 
       // append hrs
       for (var i = 0; i < this.totalDonutsPerDay.length; i++){
-        var td = document.createElement("td");
-        td.innerHTML = this.totalDonutsPerDay[i];
-        tr.appendChild(td);
+        var tableData = document.createElement("td");
+        tableData.innerHTML = this.totalDonutsPerDay[i];
+        tableRow.appendChild(tableData);
         this.sumDonutsPerDay += this.totalDonutsPerDay[i];
       }
 
       //append total
       var total = document.createElement("td");
       total.innerHTML = this.sumDonutsPerDay;
-      tr.appendChild(total);
+      tableRow.appendChild(total);
 
 }
 
@@ -64,7 +59,11 @@ var wedgewood = new Donutshop('Wedgewood', 2, 28, 1.25);
 var ballard = new Donutshop('Ballard', 8, 58, 3.75);
   //downtown.getCustPerHr();
   //console.log(downtown.getCustPerHr());
-
+downtown.getDonutsByTheHr();
+capitolHill.getDonutsByTheHr();
+southLakeUnion.getDonutsByTheHr();
+wedgewood.getDonutsByTheHr();
+ballard.getDonutsByTheHr();
 
 
 downtown.render();
