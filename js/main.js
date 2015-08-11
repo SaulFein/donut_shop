@@ -14,7 +14,8 @@ Donutshop.prototype.getCustPerHr = function() {
   return Math.floor(Math.random() * (this.maxCustPerHr - this.minCustPerHr + 1)) + this.minCustPerHr;
 }
 
-//Gets the amount of donuts sales for each hour
+
+//Gets the amount of donuts sales for a single hour
 Donutshop.prototype.getDonutPerHr = function() {
   return this.avDonutPerCust * this.getCustPerHr();
 }
@@ -39,20 +40,20 @@ Donutshop.prototype.render = function() {
       // append name
       var table = document.getElementById("donut-table"); //This links to my table in my index.html file
       var tableRow = document.createElement("tr"); //This creates a new table row in my table
-      tableRow.innerHTML = this.locationName; //This takes the location name and stages it with tableRow
+      tableRow.innerHTML = this.locationName; //This takes the location name and stages in tableRow variable
       table.appendChild(tableRow);// This puts the location name into the table
 
       // append hrs
       for (var i = 0; i < this.totalDonutsPerHr.length; i++){
         var tableData = document.createElement("td"); //This creates new table data
-        tableData.innerHTML = this.totalDonutsPerHr[i]; // Takes array with donut total per hour and stages them with tableData
+        tableData.innerHTML = this.totalDonutsPerHr[i]; //Takes array with donut total per hour and stages in the tableData variable
         tableRow.appendChild(tableData); //Puts tableData into 'cells'
         this.sumDonutsPerDay += this.totalDonutsPerHr[i];
       }
 
       //append total
       var total = document.createElement("td"); //This creates new talbe data
-      total.innerHTML = this.sumDonutsPerDay; //This stages the sumDonutsPerDay for var total
+      total.innerHTML = this.sumDonutsPerDay; //This takes the sumDonutsPerDay and stages it in the var total
       tableRow.appendChild(total);  //puts total into cells
 
 }
