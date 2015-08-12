@@ -72,7 +72,7 @@ var renderAll = function () {
   headerRow.id="headerRow";
   table.appendChild(headerRow);
   for (var i = 0; i < 14; i++){
-    var headerCell = document.createElement('td');
+    var headerCell = document.createElement('th');
     headerCell.innerHTML = headers[i];
     headerRow.appendChild(headerCell);
   };
