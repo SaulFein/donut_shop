@@ -64,6 +64,7 @@ var renderAll = function () {
   var table = document.getElementById("donut-table");
   while (table.firstChild) {
     table.removeChild(table.firstChild);
+    console.log(table.firstChild);
   }
   for (var i = 0; i < donutShopObjects.length; i++){
     donutShopObjects[i].render();
