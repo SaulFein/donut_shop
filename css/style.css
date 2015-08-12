@@ -13,6 +13,7 @@ Donut Shop Steez!
 
 body {
   background-color: #644D52;
+  background-image: url("../img/donut_background.jpeg");
 }
 
 h1 {
@@ -61,7 +62,7 @@ label {
 fieldset {
   border-color: #332532;
   border-width: 4px;
-  width: 18%;
+  width: 20%;
 }
 
 #donut-table {
