@@ -36,7 +36,6 @@ Donutshop.prototype.hourlyTotal = function() {
 }
 
 
-
 //This method fills in the table
 Donutshop.prototype.render = function() {
       // append name
@@ -90,6 +89,8 @@ var handelShopSubmit = function(){
       donutShopObjects[i] = newShop;
       donutShopObjects.splice(-1, 1);
       renderAll();
+
+
 
     }
   }
