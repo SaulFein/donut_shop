@@ -85,6 +85,8 @@ var newShopButton = document.getElementById("add-new-shop");
 
 var handelShopSubmit = function(){
 
+
+
   var newShopForm = document.getElementById("add-new-form");
   var newLocationName = document.getElementById("location-name").value;
   var newMinCust = parseInt(document.getElementById("min-cust").value);
@@ -104,6 +106,13 @@ var donutShopObjects = [downtown, capitolHill, southLakeUnion, wedgewood, ballar
   //if(donutShopObjects = newLocationName){
    // newLocationName ==
 //}
+
+
+
+
+
+
+
 
 
 
