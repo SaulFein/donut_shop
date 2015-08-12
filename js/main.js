@@ -64,7 +64,19 @@ var renderAll = function () {
   var table = document.getElementById("donut-table");
   while (table.firstChild) {
     table.removeChild(table.firstChild);
-  }
+    console.log(table.firstChild);
+  };
+
+  var headers = ["Shop", "7:00 AM", "8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "Total"];
+  var headerRow = document.createElement('tr');
+  headerRow.id="headerRow";
+  table.appendChild(headerRow);
+  for (var i = 0; i < 14; i++){
+    var headerCell = document.createElement('th');
+    headerCell.innerHTML = headers[i];
+    headerRow.appendChild(headerCell);
+  };
+
   for (var i = 0; i < donutShopObjects.length; i++){
     donutShopObjects[i].render();
   }
