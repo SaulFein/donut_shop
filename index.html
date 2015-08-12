@@ -4,12 +4,18 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatable" content="IE=edge">
-      <title></title>
-      <link rel="stylesheet" href="">
+      <title>Donut Shop! Delicious!</title>
+      <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     </head>
+
+    <h1>Delicious Donuts!</h1>
+
     <body>
 
-      <table id="donut-table" border="1">
+      <fieldset style="width:70%">
+          <legend id="table-title">Delicious Table!</legend>
+      <table id="donut-table" border="2">
         <tr>
           <th>Shop</th>
           <th>7:00 AM</th>
@@ -26,11 +32,17 @@
           <th>6:00 PM</th>
           <th>Total</th>
         </tr>
-      </table>
+      </table><br />
+
+    </fieldset>
+
+<p id="description">This is a program that models the amount of donuts that each Top Pot donut shop needs to make per location. It also allows you to add new locations and update an existing locations parameters.</p>
+
 
       <form id="new-shop-form">
-        <fieldset style="width:18%">
-          <legend>Add New Location or Update Existing</legend>
+        <fieldset>
+          <legend id="form-title">Add New Location or Update Existing</legend>
+          <img src="img/donut_stack.png" width="125" height= "195.28112449799" align="right">
             <label for="location-name">Location: </label><br />
             <input id="location-name" type="text"><br />
 
@@ -43,11 +55,11 @@
             <label for="av-donuts">Average # Donuts: </label><br />
             <input id="av-donuts" type="number"><br />
 
-          <button id="add-new-shop" type="button">Create New Shop</button><br />
+          <button id="add-new-shop" type="button">Create New/Update</button><br />
           </fieldset>
 
       </form>
-      <p>This is a program that models the amount of donuts that each Top Pot donut shop needs to make per location.</p>
+
     </body>
 
       <script src="js/main.js"></script>
