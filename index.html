@@ -6,6 +6,7 @@
       <meta http-equiv="X-UA-Compatable" content="IE=edge">
       <title>Donut Shop! Delicious!</title>
       <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     </head>
 
     <h1>Delicious Donuts!</h1>
@@ -13,8 +14,8 @@
     <body>
 
       <fieldset style="width:70%">
-          <legend>Delicious Table!</legend>
-      <table id="donut-table" border="1">
+          <legend id="table-title">Delicious Table!</legend>
+      <table id="donut-table" border="2">
         <tr>
           <th>Shop</th>
           <th>7:00 AM</th>
@@ -39,7 +40,7 @@
 
       <form id="new-shop-form">
         <fieldset>
-          <legend>Add New Location or Update Existing</legend>
+          <legend id="form-title">Add New Location or Update Existing</legend>
             <label for="location-name">Location: </label><br />
             <input id="location-name" type="text"><br />
 
@@ -52,8 +53,8 @@
             <label for="av-donuts">Average # Donuts: </label><br />
             <input id="av-donuts" type="number"><br />
 
-
           <button id="add-new-shop" type="button">Create New/Update</button><br />
+
           </fieldset>
 
       </form>

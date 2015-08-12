@@ -17,10 +17,19 @@ body {
 
 h1 {
   color: #F77A52;
+  font-family: "Droid Serif";
 }
 
-legend {
+#table-title {
   color: #F77A52;
+  font-family: "Droid Serif";
+  font-size: 20px;
+}
+
+#form-title {
+  color: #F77A52;
+  font-family: "Droid Serif";
+  font-size: 14px;
 }
 
 th {
@@ -29,6 +38,8 @@ th {
 
 td {
   color: #A49A87;
+  padding: 10px;
+  padding-right: 12px;
 }
 
 tr {
@@ -37,6 +48,10 @@ tr {
 
 label {
   color: #F77A52;
+}
+
+#table-data {
+  padding: 10px;
 }
 
 #description {
@@ -51,4 +66,16 @@ fieldset {
 
 #donut-table {
 border-color: #332532;
+}
+
+input {
+  background-color: #FF974F;
+  border-color: #A49A87;
+  display: block;
+}
+
+#add-new-shop {
+  color: #FF974F;
+  background-color: #332532;
+  border-color: #A49A87;
 }
