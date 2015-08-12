@@ -1,1 +1,54 @@
-/*Donut Shop Steez!*/
+/*
+
+Donut Shop Steez!
+
+  Table of Contents:
+  -background 10-25
+  -text 30-50
+  -colors 51 - 60
+  -layout 60-100
+  -animations
+
+*/
+
+body {
+  background-color: #644D52;
+}
+
+h1 {
+  color: #F77A52;
+}
+
+legend {
+  color: #F77A52;
+}
+
+th {
+  color: #F77A52;
+}
+
+td {
+  color: #A49A87;
+}
+
+tr {
+  color: #F77A52;
+}
+
+label {
+  color: #F77A52;
+}
+
+#description {
+  color: #A49A87;
+}
+
+fieldset {
+  border-color: #332532;
+  border-width: 4px;
+  width: 18%;
+}
+
+#donut-table {
+border-color: #332532;
+}
