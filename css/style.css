@@ -11,72 +11,90 @@ Donut Shop Steez!
 
 */
 
+/*background*/
 body {
-  background-color: #644D52;
-  background-image: url("../img/donut_background.jpeg");
+  background-color: #000D0C;
+  margin-top: 80px;
+  /*background-image: url("../img/woodbackground.jpg");*/
 }
 
+/*text*/
 h1 {
-  color: #F77A52;
-  font-family: "Droid Serif";
+  color: #BFB999;
+  font-family: 'Syncopate', sans-serif;
 }
 
 #table-title {
-  color: #F77A52;
-  font-family: "Droid Serif";
+  color: #BFB999;
+  font-family: 'Syncopate', sans-serif;
   font-size: 20px;
 }
 
 #form-title {
-  color: #F77A52;
-  font-family: "Droid Serif";
+  color: #BFB999;
+  font-family: 'Syncopate', sans-serif;
   font-size: 14px;
 }
 
 th {
-  color: #F77A52;
+  color: #54594C;
 }
 
 td {
-  color: #A49A87;
+  color: #54594C;
   padding: 10px;
   padding-right: 12px;
 }
 
 tr {
-  color: #F77A52;
+  color: #54594C;
 }
 
 label {
-  color: #F77A52;
+  font-family: 'Syncopate', sans-serif;
+  color: #54594C;
 }
 
+#description {
+  font-family: 'Syncopate', sans-serif;
+  color: #54594C;
+}
+
+#add-new-shop {
+  color: #000D0C;
+  background-color: #BFB999;
+  border-color: #BFB999;
+}
+
+/*layout*/
 #table-data {
   padding: 10px;
 }
 
-#description {
-  color: #A49A87;
-}
-
 fieldset {
-  border-color: #332532;
+  border-color: #54594C;
   border-width: 4px;
   width: 20%;
 }
 
 #donut-table {
-border-color: #332532;
+border-color: #000D0C;
+background-color: #000D0C;
 }
 
 input {
-  background-color: #FF974F;
-  border-color: #A49A87;
+  background-color: #54594C;
+  border-color: #BFB999;
   display: block;
 }
 
-#add-new-shop {
-  color: #FF974F;
-  background-color: #332532;
-  border-color: #A49A87;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background-color: #000D0C;
+  width: 100%;
 }
+
+
