@@ -14,7 +14,8 @@ Donut Shop Steez!
 /*background*/
 body {
   background-color: #000D0C;
-  margin-top: 80px;
+  margin-top: 70px;
+  width: 90%;
   /*background-image: url("../img/woodbackground.jpg");*/
 }
 
@@ -22,33 +23,85 @@ body {
 h1 {
   color: #BFB999;
   font-family: 'Syncopate', sans-serif;
+  margin-left: 1%;
+}
+#blankspace{
+
+}
+/*table*/
+td {
+  padding: 15px;
 }
 
+#table-padding{
+  padding-top: 5%;
+}
+
+#fs-shops {
+  border-color: #54594C;
+  border-width: 4px;
+  width: 100px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+#donut-table {
+border-color: #000D0C;
+background-color: #000D0C;
+width: 90%;
+
+
+}
 #table-title {
   color: #BFB999;
   font-family: 'Syncopate', sans-serif;
   font-size: 20px;
 }
 
-#form-title {
-  color: #BFB999;
-  font-family: 'Syncopate', sans-serif;
-  font-size: 14px;
-}
-
 th {
   color: #54594C;
+  font-family: 'Syncopate', sans-serif;
+
 }
 
 td {
   color: #54594C;
   padding: 10px;
   padding-right: 12px;
+  font-family: 'Syncopate', sans-serif;
 }
 
 tr {
   color: #54594C;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: bold;
 }
+
+#new-shop-form{
+  border-color: #54594C;
+  border-width: 4px;
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  padding-left: 2%;
+  z-index: 5;
+}
+#form-title {
+  color: #BFB999;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 14px;
+}
+
+fieldset {
+  border-color: #54594C;
+}
+
+
+/*tr#Downtown {
+  vertical-align: middle;
+  border-top-width: -10px;
+}*/
 
 label {
   font-family: 'Syncopate', sans-serif;
@@ -56,6 +109,23 @@ label {
 }
 
 #description {
+float: right;
+  width:75%;
+  /*left: 20px;*/
+  font-family: 'Syncopate', sans-serif;
+  color: #54594C;
+}
+
+#picture {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 11;
+}
+
+#lebowski {
+  position: relative;
+  left: 20px;
   font-family: 'Syncopate', sans-serif;
   color: #54594C;
 }
@@ -67,19 +137,10 @@ label {
 }
 
 /*layout*/
-#table-data {
-  padding: 10px;
-}
+#donut-king {
+  clear: left;
 
-fieldset {
-  border-color: #54594C;
-  border-width: 4px;
-  width: 20%;
-}
-
-#donut-table {
-border-color: #000D0C;
-background-color: #000D0C;
+  float:right ;
 }
 
 input {
@@ -95,6 +156,11 @@ header {
   height: 70px;
   background-color: #000D0C;
   width: 100%;
+  z-index: 10;
 }
 
+/*img {
+  float: right;
+  margin: 0 0 1em 1em;
+}*/
 
