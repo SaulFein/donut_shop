@@ -16,7 +16,7 @@ body {
   background-color: #000D0C;
   margin-top: 70px;
   width: 90%;
-  /*background-image: url("../img/woodbackground.jpg");*/
+  background-image: url("../img/black.jpg");
 }
 
 /*text*/
@@ -35,6 +35,7 @@ td {
 
 #table-padding{
   padding-top: 5%;
+  padding-left: 2%;
 }
 
 #fs-shops {
@@ -95,6 +96,7 @@ tr {
 
 fieldset {
   border-color: #54594C;
+  background-color: #000D0C;
 }
 
 
@@ -114,6 +116,9 @@ float: right;
   /*left: 20px;*/
   font-family: 'Syncopate', sans-serif;
   color: #54594C;
+  background-color: #000D0C;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 #picture {
@@ -153,7 +158,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 75px;
   background-color: #000D0C;
   width: 100%;
   z-index: 10;
