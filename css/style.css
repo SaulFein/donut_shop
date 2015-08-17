@@ -1,15 +1,13 @@
-/*
-
-Donut Shop Steez!
+/* Donut Shop Steez!
 
   Table of Contents:
-  -background 10-25
-  -text 30-50
-  -colors 51 - 60
-  -layout 60-100
-  -animations
-
-*/
+  -background 12-18
+  -text 20-38
+  -table 40-86
+  -form 88-120
+  -button 122-133
+  -images 144-159
+  -layout 161-170 */
 
 /*background*/
 body {
@@ -25,9 +23,20 @@ h1 {
   font-family: 'Syncopate', sans-serif;
   margin-left: 1%;
 }
-#blankspace{
 
+#description {
+float: right;
+  width:75%;
+  font-family: 'Syncopate', sans-serif;
+  color: #54594C;
+  background-color: #000D0C;
+  padding-left: 1%;
+  padding-right: 1%;
 }
+
+#blankspace{
+}
+
 /*table*/
 td {
   padding: 15px;
@@ -39,7 +48,6 @@ td {
 }
 
 #fs-shops {
-  /*border-color: #54594C;*/
   border-width: 4px;
   width: 100px;
   margin-left:auto;
@@ -52,7 +60,6 @@ border-color: #000D0C;
 background-color: #000D0C;
 width: 90%;
 
-
 }
 #table-title {
   color: #BFB999;
@@ -63,7 +70,6 @@ width: 90%;
 th {
   color: #54594C;
   font-family: 'Syncopate', sans-serif;
-
 }
 
 td {
@@ -79,6 +85,7 @@ tr {
   font-weight: bold;
 }
 
+/*form*/
 #new-shop-form{
   border-color: #54594C;
   border-width: 4px;
@@ -88,6 +95,7 @@ tr {
   padding-left: 2%;
   z-index: 5;
 }
+
 #form-title {
   color: #BFB999;
   font-family: 'Syncopate', sans-serif;
@@ -99,30 +107,41 @@ fieldset {
   background-color: #000D0C;
 }
 
-
-/*tr#Downtown {
-  vertical-align: middle;
-  border-top-width: -10px;
-}*/
-
 label {
   font-family: 'Syncopate', sans-serif;
   color: #54594C;
+  font-size: 14px;
 }
 
-#description {
-float: right;
-  width:75%;
-  /*left: 20px;*/
-  font-family: 'Syncopate', sans-serif;
-  color: #54594C;
-  background-color: #000D0C;
-  padding-left: 1%;
-  padding-right: 1%;
+input {
+  background-color: #54594C;
+  border-color: #BFB999;
+  display: block;
 }
 
+/*button*/
+button {
+  color: #000D0C;
+  background-color: #54594C;
+  border-color: #BFB999;
+  font-family:'Syncopate', sans-serif;
+  font-weight: bold;
+  padding-top: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
+#add-new-shop:hover {
+ cursor: pointer;
+}
 
+.highlight:hover{
+  background-color: #BFB999;
+  color: #000D0C;
+}
+
+/*images*/
 .picture {
   position: absolute;
   top: 1%;
@@ -134,36 +153,12 @@ float: right;
   transform: rotateX(360deg);
 }
 
-
-
-#lebowski {
-  position: relative;
-  left: 20px;
-  font-family: 'Syncopate', sans-serif;
-  color: #54594C;
-}
-
-
-
-#add-new-shop {
-  color: #000D0C;
-  background-color: #BFB999;
-  border-color: #BFB999;
+#donut-king {
+  clear: left;
+  float:right;
 }
 
 /*layout*/
-#donut-king {
-  clear: left;
-
-  float:right ;
-}
-
-input {
-  background-color: #54594C;
-  border-color: #BFB999;
-  display: block;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -173,11 +168,4 @@ header {
   width: 100%;
   z-index: 10;
 }
-
-/*img {
-  float: right;
-  margin: 0 0 1em 1em;
-}*/
-
-
 
